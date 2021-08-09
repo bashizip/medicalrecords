@@ -6,3 +6,7 @@ The backend Api of the medical records app
 - Java
 - SparkJava
 - Jsondb 
+
+## Running
+
+- You just have to run the Jar or the Main class in any java IDE
