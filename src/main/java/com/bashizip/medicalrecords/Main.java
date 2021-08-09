@@ -16,7 +16,7 @@ import com.bashizip.medicalrecords.service.RestContext;
 public class Main {
 
     public static void main(String[] args) {
-        RestContext context = new RestContext(8484, "/api/1.0/emr/");
+        RestContext context = new RestContext(8484, "/api/1.0/");
         context.enableCors(); //only needed for web clients
         context.addEndpoint(new LoggingEndPoint());
         context.addEndpoint(new MedicalRecordEndpoint());

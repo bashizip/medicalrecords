@@ -26,7 +26,7 @@ public class Database {
     }
 
     private void init() {
-        String dbFilesLocation = "D:\\medicalrecords.json";
+        String dbFilesLocation = "D:\\medicalrecords";
 
 //Java package name where POJO's are present
         String baseScanPackage = "com.bashizip.medicalrecords.model";

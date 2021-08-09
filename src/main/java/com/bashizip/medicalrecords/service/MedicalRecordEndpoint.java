@@ -23,14 +23,14 @@ public class MedicalRecordEndpoint implements EndpointBuilder {
         /**
          * GET all medical records
          */
-        spark.get(basePath + "/medicalrecords", (req, res) -> {
+        spark.get(basePath + "/emr", (req, res) -> {
             return dao.findAll();
         }, new JsonTransformer());
 
         /**
          * post new medical record
          */
-        spark.post(basePath + "/medicalrecords", "application/json", (req, res) -> {
+        spark.post(basePath + "/emr", "application/json", (req, res) -> {
 
             String body = req.body();
             MedicalRecord userBean = JsonTransformer.getObjectMapper().readValue(body, MedicalRecord.class);
